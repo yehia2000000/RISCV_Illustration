@@ -1,0 +1,62 @@
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.preview h2 {
+  margin-bottom: 0.35rem;
+}
+
+.preview p {
+  max-width: 36rem;
+}
+
+.gridWrap {
+  padding: 0.75rem;
+  width: fit-content;
+}
+
+.grid {
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 1.05rem;
+}
+
+.grid td {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border: 1px solid var(--line);
+  background: var(--bg-inset);
+  color: var(--text);
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.4rem 0.55rem;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.table th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.note {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+}
