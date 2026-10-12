@@ -1,0 +1,193 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+}
+
+.watching {
+  margin: 0;
+  flex: 1 1 16rem;
+  color: var(--text);
+  font-size: 1.12rem;
+  line-height: 1.4;
+}
+
+.watching strong {
+  color: var(--current);
+}
+
+.extra {
+  padding: 0.65rem 1rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.counter {
+  font-family: var(--mono);
+  color: var(--muted);
+  min-width: 4.5rem;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: stretch;
+}
+
+.col {
+  padding: 0.95rem 1.05rem;
+  min-height: 18rem;
+}
+
+.label {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.fn {
+  font-family: var(--mono);
+  color: var(--class0);
+  font-size: 0.82rem;
+  margin: 0 0 0.45rem;
+}
+
+.code {
+  margin: 0;
+  padding: 0.7rem 0;
+  background: var(--bg-inset);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.line {
+  display: block;
+  padding: 0.05rem 0.9rem;
+  color: #9eb0c0;
+  white-space: pre;
+}
+
+.lit {
+  color: var(--text);
+  background: rgba(244, 226, 133, 0.14);
+  box-shadow: inset 3px 0 var(--current);
+}
+
+.changed {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.changed span {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  font-family: var(--font);
+  font-weight: 650;
+  margin-right: 0.65rem;
+}
+
+.codeHead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.45rem;
+}
+
+.codeHead .label,
+.codeHead .fn {
+  margin: 0;
+}
+
+.codeHead .fn {
+  margin-top: 0.2rem;
+}
+
+.inlineExtra {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+}
+
+.compact {
+  gap: 0.5rem;
+}
+
+.compact .bar {
+  padding: 0.5rem 0.75rem;
+}
+
+.compact .watching {
+  font-size: 0.95rem;
+}
+
+.compact .col {
+  padding: 0.65rem 0.75rem;
+  min-height: 0;
+  overflow-x: auto;
+}
+
+.compact .code {
+  padding: 0.4rem 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.compact .line {
+  padding: 0.02rem 0.6rem;
+}
+
+.compact .changed {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.82rem;
+}
+
+.compact .nav .btn,
+.compact .nav button {
+  padding: 0.28rem 0.55rem;
+  font-size: 0.8rem;
+}
+
+.compact .counter {
+  min-width: 3.6rem;
+  font-size: 0.8rem;
+}
+
+.compact .board {
+  gap: 0.55rem;
+  align-items: stretch;
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 960px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
