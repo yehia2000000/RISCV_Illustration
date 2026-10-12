@@ -1,8 +1,8 @@
 # RISC-V CV illustration sessions
 
-Interactive walkthrough of the box-filter kernel, scalar (`ref::BoxFilterNxN`)
-and vector (`vec::BoxFilterNxN`). The home page opens that one session:
-Overview, Scalar Walkthrough, and Vector Walkthrough.
+Interactive walkthroughs of the box-filter kernel, scalar (`ref::BoxFilterNxN`)
+and vector (`vec::BoxFilterNxN`), and the median-filter kernel
+(`ref::MedianFilterNxN`). The home page lists both sessions.
 
 Convolution uses a **4×3** teaching patch (3×3 kernel, `BorderMode` CONSTANT
 0). Interior outputs in column `x = 1` are 50 then 80.
@@ -57,7 +57,7 @@ npm run dev
 ```
 
 ### Open [http://localhost:3000](http://localhost:3000). 
-That home page opens the convolution session.
+That home page lists the box-filter and median-filter sessions.
 
 ## Static export
 
@@ -72,8 +72,13 @@ HTML is written to `out/`. Host that folder anywhere (no Node server required).
 
 | Route                      | What you get                                                                 |
 | -------------------------- | ---------------------------------------------------------------------------- |
-| `/`                        | Convolution session                                                         |
+| `/`                        | Box filter and median filter sessions                                       |
 | `/convolution`             | Box filter overview and `ref::BoxFilterNxN` contract                        |
 | `/convolution/walkthrough` | Scalar: naive → separable → enhanced on LessonBoard                        |
 | `/convolution/vector`      | Lane choice, then the `vec::` RVV kernel                                    |
+| `/median`                  | Median concepts: overview and `ref::MedianFilterNxN`                        |
+| `/median/naive`            | Naive sort-and-pick lab                                                     |
+| `/median/network`          | 5×5 sorting-network lab                                                     |
+| `/median/histogram`        | Running-histogram lab                                                       |
+| `/median/walkthrough`      | 3×3 network, scalar and vector                                              |
 

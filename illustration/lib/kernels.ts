@@ -33,6 +33,32 @@ export const KERNELS: Kernel[] = [
       { href: "/convolution/vector", label: "Vector Walkthrough" },
     ],
   },
+  {
+    id: "median",
+    slug: "median",
+    title: "Median filter",
+    shortTitle: "Median",
+    status: "ready",
+    summary:
+      "Replace each pixel with the middle rank of its neighborhood. 3×3 and 5×5 use sorting networks; larger windows keep a running histogram.",
+    refSymbol: "ref::MedianFilterNxN",
+    pages: [
+      {
+        href: "/median",
+        label: "Concepts",
+        children: [
+          { href: "/median", label: "Overview" },
+          { href: "/median/naive", label: "Naive" },
+          { href: "/median/network", label: "5×5 network" },
+          { href: "/median/histogram", label: "Histogram" },
+        ],
+      },
+      {
+        href: "/median/walkthrough",
+        label: "Walkthrough",
+      },
+    ],
+  },
 ];
 
 export function kernelById(id: string): Kernel {

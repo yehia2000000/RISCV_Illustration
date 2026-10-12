@@ -8,8 +8,10 @@ export default function HomePage() {
       <p className={styles.kicker}>RISC-V CV · kernel sessions</p>
       <h1>Kernel walkthroughs</h1>
       <p className={styles.lead}>
-        Interactive lab for the box-filter kernel. Open the session for the
-        overview, the scalar walkthrough, and the vector walkthrough.
+        Interactive labs for the box-filter and median-filter kernels. The box
+        filter session has the overview, the scalar walkthrough, and the vector
+        walkthrough. The median session has concept labs and a scalar/vector
+        walkthrough.
       </p>
 
       <div className={styles.grid}>

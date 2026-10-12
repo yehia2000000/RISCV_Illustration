@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RISC-V CV convolution",
+  title: "RISC-V CV sessions",
   description:
-    "Interactive walkthrough of the scalar and vector 2D box-filter kernel.",
+    "Interactive walkthroughs of the box filter and median filter kernels.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
