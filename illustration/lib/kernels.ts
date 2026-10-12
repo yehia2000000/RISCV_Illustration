@@ -64,6 +64,7 @@ export const KERNELS: Kernel[] = [
     ],
   },
   {
+<<<<<<< HEAD
     id: "tiling",
     slug: "tiling",
     title: "Vectorization Tiling",
@@ -83,14 +84,39 @@ export const KERNELS: Kernel[] = [
     ],
   },
   {
+=======
+>>>>>>> their-asmaa
     id: "median",
     slug: "median",
     title: "Median filter",
     shortTitle: "Median",
+<<<<<<< HEAD
     status: "placeholder",
     summary:
       "Replace each pixel with the median of its neighborhood to suppress impulse noise.",
     pages: [{ href: "/median", label: "Overview" }],
+=======
+    status: "ready",
+    summary:
+      "Replace each pixel with the middle rank of its neighborhood. 3×3 and 5×5 use sorting networks; larger windows keep a running histogram.",
+    refSymbol: "ref::MedianFilterNxN",
+    pages: [
+      {
+        href: "/median",
+        label: "Concepts",
+        children: [
+          { href: "/median", label: "Overview" },
+          { href: "/median/naive", label: "Naive" },
+          { href: "/median/network", label: "5×5 network" },
+          { href: "/median/histogram", label: "Histogram" },
+        ],
+      },
+      {
+        href: "/median/walkthrough",
+        label: "Walkthrough",
+      },
+    ],
+>>>>>>> their-asmaa
   },
 ];
 
